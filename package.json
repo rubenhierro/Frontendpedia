@@ -1,7 +1,7 @@
 {
-  "name": "test2",
+  "name": "frontendpedia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple website with frontend tips",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,8 @@
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "clean": "rimraf dist .cache .cache-loader",
-    "postcss": "postcss -u autoprefixer style.css -d dist"
+    "postcss": "postcss -u autoprefixer style.css -d dist",
+    "lint": "eslint \"**/*.js\" --quiet"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,8 @@
     "autoprefixer": "^9.7.5",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "eslint": "^6.8.0",
+    "prettier": "2.0.2"
   }
 }
