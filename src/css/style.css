@@ -1,0 +1,318 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom properties CSS colors */
+:root {
+    --principal: #306291;
+    --fons-fosc: rgba(69, 141, 209, 0.5);
+    --fons-clar: rgba(69, 141, 209, 0.2);
+    --text: #1f1f11;
+    --text-clar: #666666;
+    font-size: 10px;
+}
+
+/* Selectors */
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    text-align: center;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1, h2, h3, figure {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: var(--fons-clar);
+    padding: 20px;
+    border-bottom: 3px solid var(--fons-fosc);
+}
+
+/* Nav */
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: var(--principal);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li.active a {
+    text-decoration-line: underline;
+}
+
+nav.breadcrumbs ul {
+    list-style: none;
+    text-transform: none;
+    margin: 0;
+    padding:20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav.breadcrumbs ul li {
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+
+nav.breadcrumbs ul li.active {
+    color: var(--text-clar);
+}
+
+nav.breadcrumbs ul li a:hover {
+   text-decoration: none;
+}
+
+nav.breadcrumbs ul li a::after {
+    content: ' /';
+}
+
+nav.social-links {
+    font-size: x-large;
+}
+
+
+.enlaces-relacionados {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces-relacionados li a {
+    color: var(--principal);
+    text-decoration: none;
+}
+
+.enlaces-relacionados li a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.presentation p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.categories-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.goal img {
+    width: 300px;
+    margin: 5px;
+}
+.empty {
+    display: none;
+}
+
+
+.goal div {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.goal h2 {
+    text-align: left;
+}
+
+.goal p {
+    text-align: justify;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.goal-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.goal-aside img {
+    width: 300px;
+}
+
+.secondari-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.secondari-nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.goal-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Estils del peu */
+
+footer {
+    text-align: center;
+    border-top: 3px solid var(--fons-fosc);
+    color: var(--text-clar);
+    background-color: var(--fons-clar);
+    padding-bottom: 10px;
+}
+
+footer > p {
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 800px) {
+
+    .header {
+        flex-direction: row;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer p{
+        text-align: left;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    .goal {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .empty {
+        width: 300px;
+        margin: 5px;
+        display: initial;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .goal-aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .goal-content {
+        width: 60%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

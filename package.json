@@ -2,7 +2,7 @@
   "name": "frontendpedia",
   "version": "1.0.0",
   "description": "Simple website with frontend tips",
-  "main": "index.html",
+  "main": "./src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "parcel:dev": "parcel index.html",
