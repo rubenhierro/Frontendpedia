@@ -185,15 +185,6 @@ nav.social-links {
     text-align: justify;
 }
 
-.category a {
-    color: var(--principal);
-    text-decoration: none;
-}
-
-.category a:hover {
-    text-decoration: underline;
-}
-
 .content {
     display: flex;
     flex-direction: column;
