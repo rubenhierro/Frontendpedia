@@ -1,6 +1,6 @@
 const button = document.getElementById('gift');
 gifts = [
-    'Macboo Pro',
+    'Macbook Pro 16 pulgadas',
     'Iphone 15 Max',
     'Viaje a Marbella',
     'BMW Serie 2 Gran Coupé',
