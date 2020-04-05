@@ -39,11 +39,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* code {
-    background-color: lightgrey;
-    padding: 10px;
-} */
-
 button {
     background-color: var(--fons-fosc);
     border-color: var(--principal);
