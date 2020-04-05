@@ -44,6 +44,19 @@ code {
     padding: 10px;
 }
 
+button {
+    background-color: var(--fons-fosc);
+    border-color: var(--principal);
+    padding: 10px 50px;
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+button:hover, button:focus {
+    background-color: var(--fons-clar);
+}
+
 /* Header */
 
 .header {
@@ -237,6 +250,11 @@ nav.social-links {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.gift {
+    background-color: var(--fons-clar);
+    padding: 10px;
 }
 
 /* Estils del peu */
