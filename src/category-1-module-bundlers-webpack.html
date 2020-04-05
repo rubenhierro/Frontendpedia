@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="#">
+    <title>Webpack | FrontEndpedia</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7ebb1a595d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <ul>
+                <li class="active"><a href="index.html"><img src="img/logo-site.png" alt="logotipo"
+                            title="Inicio | FrontEndpedia"></a>
+                </li>
+                <li><a href="category-1-module-bundlers.html">Bundlers</a></li>
+                <li><a href="category-2-javascript-frameworks.html">Frameworks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="category-1-module-bundlers.html">Bundlers</a></li>
+                <li class="active">Webpack</li>
+            </ul>
+        </nav>
+        <div class="content">
+            <aside class="category-aside">
+                <img src="img/webpack-250.png" alt="Webpack">
+                <nav class="secondari-nav">
+                    <ul>
+                        <li><a href="#datos-destacabes">Datos destacables</a></li>
+                        <li><a href="#metas">Metas</a></li>
+                        <li><a href="#enlaces">Enlaces</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="category-content">
+                <h1>¿Qué es Webpack, cómo funciona y cómo instalarlo?</h1>
+                <h2 id="datos-destacables">Introducción</h2>
+                <p>
+                    Más allá de su descripción oficial, podríamos definir Webpack como una herramienta Open Source
+                    utilizada por los desarrolladores para empaquetar y exportar todos los ficheros necesarios para que
+                    un proyecto funcione con todas sus dependencias frontend. Entre otras funcionalidades, con Webpack
+                    podemos obtener un archivo JavaScript que contenga la totalidad del código necesario en un proyecto
+                    minimizado y transpilado, incluyendo sus dependencias, o bien un archivo con el CSS tras haber
+                    pasado los preprocesadores necesarios. En este artículo, te explicamos un poco más el funcionamiento
+                    de Webpack y cómo instalar esta útil herramienta para Desarrollo Web.
+                </p>
+                <p>
+                    Antes que nada, conviene que aclaremos que utiliza Webpack no entraña gran dificultad para las
+                    funciones más básicas, pero al igual que ocurre con otras herramientas de este tipo, según vamos
+                    personalizando y profundizando en la aplicación y en sus funcionalidades, su uso se va complicando,
+                    como es lógico. O dicho de otro modo: cuantas más variables tengamos que controlar con Webpack,
+                    mayor será el código de configuración y los plugins que tenemos que introducir en el paquete (que
+                    generalmente se conocer por la palabra en inglés bundle).
+                </p>
+                <h2 id="conceptos">Conceptos básicos de Webpack</h2>
+                <p>
+                    Antes de meternos de lleno con Webpack, es importante aclarar unos conceptos básicos previos que nos
+                    ayudarán a entender mejor cómo funciona estaa herramienta:
+                </p>
+                <ul>
+                    <li>Entry Point o punto de entrada. Sirve para indicar el punto exacto desde el que Webpack empezará
+                        a analizar el código para generar los paquetes.
+                    </li>
+                    <li>
+                        Output o punto de salida. Indica el lugar donde se colocarán los paquetes que se hayan generado:
+                        JavaScript, CSS, HTML, etc
+                    </li>
+                    <li>
+                        Loaders o cargadores. Son los sistemas que hacen posible que Webpack transforme todos los
+                        archivos o ficheros requeridos (todo aquello que deba modificarse en la aplicación debe cargarse
+                        con un loader).
+                    </li>
+                    <li>
+                        Plugins. Amplían el rango de funcionalidades por defecto de Webpack; permiten tareas como la
+                        optimización del código empaquetado, la gestión y optimización de las imágenes, incluir trazas
+                        entre cargadores, comprobar cómo ha ido la ejecución o añadir código o variables en los archivos
+                        de nuestra aplicación.
+                    </li>
+                </ul>
+                <p>
+                    Ahora que tenemos claros los conceptos básicos de Webpack, podemos entrar de lleno en su
+                    instalación.
+                </p>
+                <h2 id="Instalacion">Instalación</h2>
+                <h3>Instalación de Webpack de manera global</h3>
+                <p>Para poder instalar Webpack es necesario disponer de una versión actualizada de NodeJS y resulta más
+                    que aconsejable tener conocimientos básicos de este framework para poder manejar Webpack
+                    correctamente.
+                </p>
+                <p>
+                    Una vez que hemos comprobado que tenemos NodeJS actualizado, procedemos a instalar Webpack en el
+                    equipo de manera global, para poder acceder a él desde cualquier punto del terminal. Es recomendable
+                    también instalarlo de modo local en el proyecto Webpack para que se nos quede almacenado como
+                    dependencia de desarrollo en package.json.
+                </p>
+                <p>Para instalarlo de manera global:</p>
+                <p><code>npm install --global webpack webpack-cli</code></p>
+                <p>El paquete webpack corresponde con el propio Webpack, mientras que el paquete webpack-cli contiene
+                    los comandos necesarios para realizar las operaciones con Webpack, lo que se conoce como Interfaz de
+                    línea de comandos o CLI por su acrónimo en inglés.
+                </p>
+                <h2 id="enlaces">Enlaces</h2>
+                <ul class="enlaces-relacionados">
+                    <li><a href="https://webpack.js.org/">Página oficial de Webpack</a></li>
+                    <li><a href="https://angular.io/tutorial">Documentación oficial de Webpack</a></li>
+                    <li><a href="https://webpack.js.org/concepts/configuration/">Ejemplo de configuración de Webpack</a>
+                    </li>
+                </ul>
+                <br>
+                <p>Fuente: <a
+                        href="https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/">https://www.arsys.es/blog/programacion/webpack-instalacion-funcionamiento/</a>
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </nav>
+            <nav class="social-links">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer">© 2020 Rubèn Hierro. Trabajo realizado para la asignatura Herramientas HTML y CSS.</p>
+    </footer>
+</body>
+
+</html>
