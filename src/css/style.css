@@ -345,9 +345,4 @@ footer > p {
     .category-content ul,ol {
         padding-left: 40px;
     }
-
-    form {
-        width: 60%;
-        margin: 0 auto;
-    }
 }
