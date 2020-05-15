@@ -56,17 +56,6 @@ button:focus {
   background-color: var(--fons-clar);
 }
 
-/* .button {
-  background-color: #33ae74;
-  transition: background-color 0.5s ease-out;
-} */
-
-/* button:hover {
-  background-color: #1ce;
-} */
-
-/* Header */
-
 .header {
   display: flex;
   flex-direction: column;
