@@ -227,12 +227,17 @@ nav.social-links {
   width: 200px;
 }
 
+.img-svg {
+  max-height: 300px;
+}
+
 .secondari-nav ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .secondari-nav ul li {
@@ -352,8 +357,4 @@ footer > p {
   ol {
     padding-left: 40px;
   }
-  /* .img-club {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    margin-top: 15px;
-  } */
 }
