@@ -1,284 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Angular es una plataforma para crear aplicaciones web móviles y de escritorio.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Angular es una plataforma para crear aplicaciones web móviles y de escritorio."
+    />
     <title>Angular | FrontEndpedia</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="header">
-            <ul>
-                <li class="active"><a href="index.html"><img src="img/logo-site.png" alt="logotipo"
-                            title="Inicio | FrontEndpedia"></a>
-                </li>
-                <li><a href="category-1-module-bundlers.html">Bundlers</a></li>
-                <li><a href="category-2-javascript-frameworks.html">Frameworks</a></li>
-            </ul>
-        </nav>
+      <nav class="header">
+        <ul>
+          <li class="active">
+            <a href="index.html"
+              ><img src="img/logo-site.png" alt="logotipo" title="Inicio | FrontEndpedia"
+            /></a>
+          </li>
+          <li><a href="category-1-module-bundlers.html">Bundlers</a></li>
+          <li><a href="category-2-javascript-frameworks.html">Frameworks</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <nav class="breadcrumbs">
+      <nav class="breadcrumbs">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="category-2-javascript-frameworks.html">Frameworks</a></li>
+          <li class="active">Angular</li>
+        </ul>
+      </nav>
+      <div class="content">
+        <aside class="category-aside">
+          <img src="img/angular-250.png" alt="Angular" />
+          <nav class="secondari-nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="category-2-javascript-frameworks.html">Frameworks</a></li>
-                <li class="active">Angular</li>
+              <li><a href="#introduccion">Introducción</a></li>
+              <li><a href="#historia">Historia</a></li>
+              <li><a href="#caracteristicas">Características</a></li>
+              <li><a href="#ventajas">Ventajas</a></li>
+              <li><a href="#enlaces">Enlaces</a></li>
             </ul>
-        </nav>
-        <div class="content">
-            <aside class="category-aside">
-                <img src="img/angular-250.png" alt="Angular">
-                <nav class="secondari-nav">
-                    <ul>
-                        <li><a href="#introduccion">Introducción</a></li>
-                        <li><a href="#historia">Historia</a></li>
-                        <li><a href="#caracteristicas">Características</a></li>
-                        <li><a href="#ventajas">Ventajas</a></li>
-                        <li><a href="#enlaces">Enlaces</a></li>
-                    </ul>
-                </nav>
-            </aside>
+          </nav>
+        </aside>
 
-            <div class=" category-content">
-                <h2 id="introduccion">Introducción</h2>
-                <p>¿Que es Angular?. Es un Framework que facilita la creación de aplicaciones web.
-                    Angular combina
-                    plantillas declarativas, inyección de dependencias herramientas de extremo a extremo
-                    y las mejores
-                    prácticas para ser aplicadas en el desarrollo FrontEnd.</p>
-                <p>
-                    Desde la aparición de Angular la nueva versión de AngularJS se pueden crear
-                    aplicaciones tanto para
-                    la web, móvil e incluso el escritorio, convirtiendolo en un Framewoek muy funcional
-                    para los
-                    desarrolladores.
-                </p>
-                <p>
-                    Hoy en día con tanta oferta de Frameworks, los desarrolladores tienen todo un
-                    abanico de
-                    posibilidades para crear aplicaciones webs modernas, siempre unos tienen ciertas
-                    ventajas que otros
-                    en algún tipo de funcionalidad, en está oportunidad vamos a hablar de Angular, sus
-                    características y
-                    las ventajas de utilizarlo, así como enlace a algunos recursos para empezar con este
-                    poderoso
-                    Framework.
-                </p>
-                <h2 id="historia">Un poco de historia sobre Angular</h2>
-                <h3>AngularJS</h3>
-                <p>
-                    La historia comienza con la aparición de AngularJS en el momento en que el
-                    desarrollo FrontEnd se
-                    basaba en casi su totalidad con el uso de JQuery y otros componentes como Prototype.
-                    AngularJS es un
-                    Framework MVC basado en JavaScript que permite crear aplicaciones del tipo SPA –
-                    Single Page
-                    Applications, es decir aplicaciones de una sóla página.
-                </p>
-                <p>
-                    La primera versión de AngularJS apareció por el año 2009, pero se popularizo por el
-                    año 2012,
-                    teniendo una gran aceptación en el año 2013, por numerosos programadores FrontEnd.
-                    Prácticamente fue
-                    el año en que se rompieron paradigmas de la programación web que se centraba
-                    mayormente en
-                    aplicaciones del tipo LAMP (Linux + Apache + MySQL + PHP), para dar inicio a la
-                    tendencia de
-                    aplicaciones del tipo JavaScript End-to-End, es decir JavaScript tanto en el
-                    FrontEnd como en el
-                    BackEnd.
-                </p>
-                <h3>Angular 2</h3>
-                <p>
-                    Angular 2 trajo consigo muchos cambios, para empezar quitarón el JS del nombre, y
-                    sobre todo hubo un
-                    cambio rádical en la forma de crear las aplicaciones, prácticamente es aprender otro
-                    Framework desde
-                    cero, pero manteniendo los conceptos de funcionalidad del anterior AngularJS para el
-                    desarrollo
-                    FrontEnd pero con una implementación diferente.
-                </p>
-                <p>
-                    Otro de los cambios que introdujo Angular 2 es la forma de programar las
-                    aplicaciones, ya que en vez
-                    de utilizar JavaScript puro, se utiliza el lenguaje de programación TypeScript. Se
-                    utiliza este
-                    lenguaje para la creación de los componentes de nuestra aplicación web, uso de tipos
-                    para la
-                    inyección de dependencias y utilizando decoradores para el manejo de los metadatos.
-                </p>
-                <h3>Angular 4</h3>
-                <p>
-                    Anunciado en Marzo del 2017 por el equipo de desarrollo de Google, muchos
-                    programadores dierón el
-                    grito al cielo por el pronto cambio de una versión a otra, incluso se creía que los
-                    cambios podrían
-                    verse similar al que hubo desde AngularJS.
-                </p>
-                <p>
-                    En realidad el manejo de versiones que utiliza el equipo de Google se denómina
-                    SEM-VER, denominada
-                    Semántica Versión, y está consiste en agregar un contexto al número de las
-                    versiones. Las mejoras
-                    entre Angular 2 y Angular 4 no son críticas y es más puedes crear aplicaciones
-                    retrocompatibles
-                    entre ambas.
-                </p>
-                <p>
-                    El equipo de desarrollo de Angular anució que a partir de ahora es un software
-                    evolutivo lo que va
-                    permitir cambiar en mejoras sin afectar la forma en que se crean las aplicaciones.
-                    Existen
-                    predicciones que indican que la versión 5 estaría para Octubre del 2017, la versión
-                    6 para Marzo del
-                    2018 y la versión 7 para Octubre del 2018. Claro que al final todo esto será
-                    definido por el equipo
-                    de Google que trabaja en el mantenimiento del Framework.
-                </p>
-                <h3>Angular 5</h3>
-                <p>
-                    En Octubre del 2017 se lanzó oficialmente la última versión de este excelente
-                    Framework, trayendo
-                    consigo las siguientes mejoras:
-                </p>
-                <ol>
-                    <li>Una última versión del componente HttpClient que permite de una forma mas
-                        sencilla y rápida de
-                        realizar peticiones web, además que Google recomienda utilizar HttpClient para
-                        este tipo de
-                        solicitudes.
-                    </li>
-                    <li>Nuevos eventos en el ciclo de vida del enrutador o router, permitiendo a los
-                        desarrolladores
-                        reatrear el ciclo de vida de cada ruta.</li>
-                    <li>Compilación incremental, esto permite realizar re-builds más rápidas de las
-                        aplicaciones, nuevas
-                        funcionalidades a los decoradores de código, también el compilador funciona como
-                        un tranformador
-                        del código TypeScript, permitiendo reconstrucciones incrementales mucho más
-                        rápidas.
-                    </li>
-                    <li>Está nueva versión además trae consigo una nueva versión de Angular CLI v1.5, un
-                        nuevo API
-                        universal de Angular y soporte DOM, internacionalización de Tuberías para
-                        números, fechas y
-                        monedas, mejoras en las validaciones de los formularios y plantillas para crear
-                        formularios.
-                    </li>
-                </ol>
-                <p>Como podemos apreciar en esta versión hubo muchas mejores a nievel de performance y
-                    optimicación del
-                    Framework, si pensabas que necesitabas aprender algo nuevo, pues lamentamos decirte
-                    que Angular
-                    maneja la misma forma de crear aplicaciones desde la versión 2 a la 5, las mejoras
-                    son a nivel
-                    interno.
-                </p>
-                <h2 id="tutorial">Tutorial Oficial de Angular</h2>
-                <p>Como es de costumbre Google implementó un portal oficial del proyecto, en donde
-                    encontrarás un
-                    tutorial paso a paso de como desarrollar una aplicación Angular desde la instalación
-                    del Framework.
-                    En este tutorial se explica el desarrollo de una aplicación denominada Tours de
-                    Heroes, que cubre
-                    los fundamentos básicos de Angular.
-                </p>
-                <p>
-                    Una vez terminado el tutorial oficial de Angular te recomiendo visitar los video
-                    tutoriales de
-                    Egghead.io, está plataforma tiene videos cortos pero muy bien explicados sobre el
-                    desarrollo de
-                    aplicacione web utilizando este Framework.
-                </p>
-                <p>
-                    Si consigues terminar los tutoriales indicados dejame decirte que tienes todo lo
-                    necesario para ser
-                    un experto en el uso de Angular, y empezar a crear aplicaciones modernas y proyecto
-                    interesantes,
-                    recuerda que este proyecto es mantenido por Google por lo que tiene garantizado una
-                    larga vida por
-                    delante.
-                </p>
-                <h2 id="caracteristicas">Características de Angular</h2>
-                <p>Ya indicamos que Angular es una plataforma de desarrollo para crear aplicaciones
-                    utilizando
-                    estándares web modernos. Incluye una gran cantidad de características esenciales:
-                </p>
-                <ul>
-                    <li>Gestos móviles</li>
-                    <li>Animaciones</li>
-                    <li>Filtrado</li>
-                    <li>Enrutamiento</li>
-                    <li>Vinculación de datos</li>
-                    <li>Seguridad</li>
-                    <li>Internacioalización</li>
-                    <li>Componentes de interfaz de usuario</li>
-                    <li>Inyección de dependencias</li>
-                    <li>Servicios</li>
-                </ul>
-                <h2 id="ventajas">Ventajas de utilizar Angular</h2>
-                <p>La gran ventaja de utilizar este Framework es que es extremadamente modular, ligero y
-                    fácil de
-                    aprender. Al manejar todo en base a módulos y tener componentes separado en el
-                    entorno de desarrollo
-                    permite un mejor mantenimiento de las aplicaciones. Está demostrado que una
-                    aplicación Angular es
-                    superior en performance frente a AngularJS.</p>
-                <p>
-                    Otra de las ventjas que presenta este Framework y la gran mayoría de ellos es que
-                    son Open Source,
-                    permitiendo que el proyecto a desarrollar no piense en costos al momento de la etapa
-                    de desarrollo.
-                </p>
-                <p>
-                    Bueno no podríamos decir que es el mejor Framework para el desarrollo FrontEnd,
-                    porque existen
-                    varios Framework que presentan sus propias características y que tienen el objetivo
-                    común de ayudar
-                    a crear aplicaciones modernas de forma rápida, sencilla y de fácil mantenimiento.
-                </p>
-                <h2 id="enlaces">Enlaces</h2>
-                <ul class="enlaces-relacionados">
-                    <li><a href="https://angular.io/">Página oficial de Angular</a></li>
-                    <li><a href="https://angular.io/tutorial">Tutorial oficial de Angular</a></li>
-                    <li><a href="https://codigoonclick.com/conoce-angular-en-5-minutos/">Conoce Angular
-                            en 5 minutos</a>
-                    </li>
-                </ul>
-                <br>
-                <p>Fuente: <a href="https://codigoonclick.com/que-es-angular/"
-                        target="_blank">https://codigoonclick.com/que-es-angular/ </a><i
-                        class="fas fa-external-link-alt"></i>
-                </p>
-            </div>
+        <div class="category-content">
+          <h2 id="introduccion">Introducción</h2>
+          <p>
+            ¿Que es Angular?. Es un Framework que facilita la creación de aplicaciones web. Angular
+            combina plantillas declarativas, inyección de dependencias herramientas de extremo a
+            extremo y las mejores prácticas para ser aplicadas en el desarrollo FrontEnd.
+          </p>
+          <p>
+            Desde la aparición de Angular la nueva versión de AngularJS se pueden crear aplicaciones
+            tanto para la web, móvil e incluso el escritorio, convirtiendolo en un Framewoek muy
+            funcional para los desarrolladores.
+          </p>
+          <p>
+            Hoy en día con tanta oferta de Frameworks, los desarrolladores tienen todo un abanico de
+            posibilidades para crear aplicaciones webs modernas, siempre unos tienen ciertas
+            ventajas que otros en algún tipo de funcionalidad, en está oportunidad vamos a hablar de
+            Angular, sus características y las ventajas de utilizarlo, así como enlace a algunos
+            recursos para empezar con este poderoso Framework.
+          </p>
+          <h2 id="historia">Un poco de historia sobre Angular</h2>
+          <h3>AngularJS</h3>
+          <p>
+            La historia comienza con la aparición de AngularJS en el momento en que el desarrollo
+            FrontEnd se basaba en casi su totalidad con el uso de JQuery y otros componentes como
+            Prototype. AngularJS es un Framework MVC basado en JavaScript que permite crear
+            aplicaciones del tipo SPA – Single Page Applications, es decir aplicaciones de una sóla
+            página.
+          </p>
+          <p>
+            La primera versión de AngularJS apareció por el año 2009, pero se popularizo por el año
+            2012, teniendo una gran aceptación en el año 2013, por numerosos programadores FrontEnd.
+            Prácticamente fue el año en que se rompieron paradigmas de la programación web que se
+            centraba mayormente en aplicaciones del tipo LAMP (Linux + Apache + MySQL + PHP), para
+            dar inicio a la tendencia de aplicaciones del tipo JavaScript End-to-End, es decir
+            JavaScript tanto en el FrontEnd como en el BackEnd.
+          </p>
+          <h3>Angular 2</h3>
+          <p>
+            Angular 2 trajo consigo muchos cambios, para empezar quitarón el JS del nombre, y sobre
+            todo hubo un cambio rádical en la forma de crear las aplicaciones, prácticamente es
+            aprender otro Framework desde cero, pero manteniendo los conceptos de funcionalidad del
+            anterior AngularJS para el desarrollo FrontEnd pero con una implementación diferente.
+          </p>
+          <p>
+            Otro de los cambios que introdujo Angular 2 es la forma de programar las aplicaciones,
+            ya que en vez de utilizar JavaScript puro, se utiliza el lenguaje de programación
+            TypeScript. Se utiliza este lenguaje para la creación de los componentes de nuestra
+            aplicación web, uso de tipos para la inyección de dependencias y utilizando decoradores
+            para el manejo de los metadatos.
+          </p>
+          <h3>Angular 4</h3>
+          <p>
+            Anunciado en Marzo del 2017 por el equipo de desarrollo de Google, muchos programadores
+            dierón el grito al cielo por el pronto cambio de una versión a otra, incluso se creía
+            que los cambios podrían verse similar al que hubo desde AngularJS.
+          </p>
+          <p>
+            En realidad el manejo de versiones que utiliza el equipo de Google se denómina SEM-VER,
+            denominada Semántica Versión, y está consiste en agregar un contexto al número de las
+            versiones. Las mejoras entre Angular 2 y Angular 4 no son críticas y es más puedes crear
+            aplicaciones retrocompatibles entre ambas.
+          </p>
+          <p>
+            El equipo de desarrollo de Angular anució que a partir de ahora es un software evolutivo
+            lo que va permitir cambiar en mejoras sin afectar la forma en que se crean las
+            aplicaciones. Existen predicciones que indican que la versión 5 estaría para Octubre del
+            2017, la versión 6 para Marzo del 2018 y la versión 7 para Octubre del 2018. Claro que
+            al final todo esto será definido por el equipo de Google que trabaja en el mantenimiento
+            del Framework.
+          </p>
+          <h3>Angular 5</h3>
+          <p>
+            En Octubre del 2017 se lanzó oficialmente la última versión de este excelente Framework,
+            trayendo consigo las siguientes mejoras:
+          </p>
+          <ol>
+            <li>
+              Una última versión del componente HttpClient que permite de una forma mas sencilla y
+              rápida de realizar peticiones web, además que Google recomienda utilizar HttpClient
+              para este tipo de solicitudes.
+            </li>
+            <li>
+              Nuevos eventos en el ciclo de vida del enrutador o router, permitiendo a los
+              desarrolladores reatrear el ciclo de vida de cada ruta.
+            </li>
+            <li>
+              Compilación incremental, esto permite realizar re-builds más rápidas de las
+              aplicaciones, nuevas funcionalidades a los decoradores de código, también el
+              compilador funciona como un tranformador del código TypeScript, permitiendo
+              reconstrucciones incrementales mucho más rápidas.
+            </li>
+            <li>
+              Está nueva versión además trae consigo una nueva versión de Angular CLI v1.5, un nuevo
+              API universal de Angular y soporte DOM, internacionalización de Tuberías para números,
+              fechas y monedas, mejoras en las validaciones de los formularios y plantillas para
+              crear formularios.
+            </li>
+          </ol>
+          <p>
+            Como podemos apreciar en esta versión hubo muchas mejores a nievel de performance y
+            optimicación del Framework, si pensabas que necesitabas aprender algo nuevo, pues
+            lamentamos decirte que Angular maneja la misma forma de crear aplicaciones desde la
+            versión 2 a la 5, las mejoras son a nivel interno.
+          </p>
+          <h2 id="tutorial">Tutorial Oficial de Angular</h2>
+          <p>
+            Como es de costumbre Google implementó un portal oficial del proyecto, en donde
+            encontrarás un tutorial paso a paso de como desarrollar una aplicación Angular desde la
+            instalación del Framework. En este tutorial se explica el desarrollo de una aplicación
+            denominada Tours de Heroes, que cubre los fundamentos básicos de Angular.
+          </p>
+          <p>
+            Una vez terminado el tutorial oficial de Angular te recomiendo visitar los video
+            tutoriales de Egghead.io, está plataforma tiene videos cortos pero muy bien explicados
+            sobre el desarrollo de aplicacione web utilizando este Framework.
+          </p>
+          <p>
+            Si consigues terminar los tutoriales indicados dejame decirte que tienes todo lo
+            necesario para ser un experto en el uso de Angular, y empezar a crear aplicaciones
+            modernas y proyecto interesantes, recuerda que este proyecto es mantenido por Google por
+            lo que tiene garantizado una larga vida por delante.
+          </p>
+          <h2 id="caracteristicas">Características de Angular</h2>
+          <p>
+            Ya indicamos que Angular es una plataforma de desarrollo para crear aplicaciones
+            utilizando estándares web modernos. Incluye una gran cantidad de características
+            esenciales:
+          </p>
+          <ul>
+            <li>Gestos móviles</li>
+            <li>Animaciones</li>
+            <li>Filtrado</li>
+            <li>Enrutamiento</li>
+            <li>Vinculación de datos</li>
+            <li>Seguridad</li>
+            <li>Internacioalización</li>
+            <li>Componentes de interfaz de usuario</li>
+            <li>Inyección de dependencias</li>
+            <li>Servicios</li>
+          </ul>
+          <h2 id="ventajas">Ventajas de utilizar Angular</h2>
+          <p>
+            La gran ventaja de utilizar este Framework es que es extremadamente modular, ligero y
+            fácil de aprender. Al manejar todo en base a módulos y tener componentes separado en el
+            entorno de desarrollo permite un mejor mantenimiento de las aplicaciones. Está
+            demostrado que una aplicación Angular es superior en performance frente a AngularJS.
+          </p>
+          <p>
+            Otra de las ventjas que presenta este Framework y la gran mayoría de ellos es que son
+            Open Source, permitiendo que el proyecto a desarrollar no piense en costos al momento de
+            la etapa de desarrollo.
+          </p>
+          <p>
+            Bueno no podríamos decir que es el mejor Framework para el desarrollo FrontEnd, porque
+            existen varios Framework que presentan sus propias características y que tienen el
+            objetivo común de ayudar a crear aplicaciones modernas de forma rápida, sencilla y de
+            fácil mantenimiento.
+          </p>
+          <h2 id="enlaces">Enlaces</h2>
+          <ul class="enlaces-relacionados">
+            <li><a href="https://angular.io/">Página oficial de Angular</a></li>
+            <li><a href="https://angular.io/tutorial">Tutorial oficial de Angular</a></li>
+            <li>
+              <a href="https://codigoonclick.com/conoce-angular-en-5-minutos/"
+                >Conoce Angular en 5 minutos</a
+              >
+            </li>
+          </ul>
+          <br />
+          <p>
+            Fuente:
+            <a href="https://codigoonclick.com/que-es-angular/" target="_blank"
+              >https://codigoonclick.com/que-es-angular/ </a
+            ><i class="fas fa-external-link-alt"></i>
+          </p>
         </div>
+      </div>
     </main>
 
     <footer>
-        <div class="footer">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Aviso legal</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                </ul>
-            </nav>
-            <nav class="social-links">
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-        <p class="footer">© 2020 Rubèn Hierro. Trabajo realizado para la asignatura Herramientas HTML y CSS.</p>
+      <div class="footer">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </nav>
+        <a href="#"><img src="./img/unete-club.svg" class="img-club" alt="Frontend-Club" /></a>
+        <nav class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer">
+        © 2020 Rubèn Hierro. Trabajo realizado para la asignatura Herramientas HTML y CSS.
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
